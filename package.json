@@ -11,5 +11,14 @@
     "winston"
   ],
   "author": "Edan Schwartz <edanschwartz@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "rx": "^4.1.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "sinon-clock-singleton": "^1.0.0"
+  }
 }
