@@ -13,7 +13,6 @@
   "author": "Edan Schwartz <edanschwartz@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.13.1",
     "loggly": "^1.1.0",
     "rx": "^4.1.0",
     "winston": "^2.2.0"
@@ -22,6 +21,7 @@
     "mocha": "^2.5.3",
     "nock": "^8.0.0",
     "sinon": "^1.17.4",
-    "sinon-clock-singleton": "^1.0.0"
+    "sinon-clock-singleton": "^1.0.0",
+    "lodash": "^4.13.1"
   }
 }
