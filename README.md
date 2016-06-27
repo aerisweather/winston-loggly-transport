@@ -14,7 +14,7 @@ You can register LogglyTransport like any other winston transport:
 
 ```
 const winston = require('winston');
-const LogglyTransport = require('winston-loggly');
+const LogglyTransport = require('winston-loggly-transport');
 
 // using the default logger
 winston.add(LogglyTransport, {
