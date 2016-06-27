@@ -1,6 +1,6 @@
 {
   "name": "@aerisweather/winston-loggly",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Loggly transport for winston",
   "main": "lib/LogglyTransport.js",
   "scripts": {
