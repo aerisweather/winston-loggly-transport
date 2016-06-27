@@ -7,7 +7,7 @@ A [Loggly](https://www.loggly.com/) transport for [winston](https://github.com/w
 LogglyTransport may be installed via npm:
 
 ```
-npm install --save @aerisweather/winston-loggly
+npm install --save winston-loggly-transport
 ```
 
 You can register LogglyTransport like any other winston transport:
@@ -81,9 +81,9 @@ This library was built as an alternative to [`winston-loggly`](https://github.co
 
 On the other hand, this library is missing some behavior provided by `winston-loggly`:
 
-* `@aerisweather/winston-loggly` does not yet support non-bulk requests
-* `@aerisweather/winston-loggly` does not yet support tags on individual logs (because in bulk requests, only one set of tags may be specified for all logs)
-* `@aerisweather/winston-loggly` does not yet support HTTP authorization
-* `@aerisweather/winston-loggly` does not yet accept unique input names
-* `@aerisweather/winston-loggly` does not yet support the `winston` streaming api.
-* `@aerisweather/winston-loggly` does not yet support the `winston` query api.
+* `winston-loggly-transport` does not yet support non-bulk requests
+* `winston-loggly-transport` does not yet support tags on individual logs (because in bulk requests, only one set of tags may be specified for all logs)
+* `winston-loggly-transport` does not yet support HTTP authorization
+* `winston-loggly-transport` does not yet accept unique input names
+* `winston-loggly-transport` does not yet support the `winston` streaming api.
+* `winston-loggly-transport` does not yet support the `winston` query api.
