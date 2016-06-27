@@ -1,0 +1,15 @@
+{
+  "name": "@aerisweather/winston-loggly",
+  "version": "0.0.0",
+  "description": "A Loggly transport for winston",
+  "main": "lib/LogglyTransport.js",
+  "scripts": {
+    "test": "mocha --recursive test/spec"
+  },
+  "keywords": [
+    "loggly",
+    "winston"
+  ],
+  "author": "Edan Schwartz <edanschwartz@gmail.com>",
+  "license": "ISC"
+}
