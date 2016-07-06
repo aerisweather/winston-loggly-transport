@@ -1,3 +1,7 @@
+v1.0.2
+
+* FIX: Send application tags along with message tags
+
 v1.0.1
 
 * FIX: Log individual message `tags` as meta data
