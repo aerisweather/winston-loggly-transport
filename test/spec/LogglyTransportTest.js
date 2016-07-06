@@ -188,7 +188,7 @@ describe('LogglyTransport', () => {
 			})
 		});
 
-		it('should not allow tags in meta data', (done) => {
+		it('should send tags in meta data', (done) => {
 			const transport = new LogglyTransport({
 				subdomain: 'test-app',
 				token: 'logglyToken123',
@@ -198,10 +198,22 @@ describe('LogglyTransport', () => {
 
 			clock.useFakeTimers(100);
 
-			transport.once('error', err => {
+			// Prepare Loggly API request
+			const logglyReq = mockLoggly({
+				token: 'logglyToken123',
+				tags: ['tagA', 'tagB'],
+				logs: [{
+					level: 'info',
+					message: 'Message A',
+					timestamp: new Date().toISOString(),
+					// meta data tag is different than loggly request tag
+					tags: ['foo']
+				}]
+			});
+
+			transport.once('logged', () => {
 				try {
-					assert(/Unable to assign tags to individual messages/.test(err.message),
-						'should emit an error, when logging with tags');
+					assert(logglyReq.isDone(), 'Loggly request was sent');
 				}
 				catch (err) { return done(err); }
 
