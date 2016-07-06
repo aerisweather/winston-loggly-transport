@@ -206,8 +206,9 @@ describe('LogglyTransport', () => {
 					level: 'info',
 					message: 'Message A',
 					timestamp: new Date().toISOString(),
-					// meta data tag is different than loggly request tag
-					tags: ['foo']
+					// Send application-level tags, too
+					// or Loggly will only record the message tags
+					tags: ['tagA', 'tagB', 'foo']
 				}]
 			});
 
