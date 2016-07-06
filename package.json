@@ -1,6 +1,6 @@
 {
   "name": "winston-loggly-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Loggly transport for winston",
   "main": "lib/LogglyTransport.js",
   "scripts": {
