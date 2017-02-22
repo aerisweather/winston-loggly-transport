@@ -1,3 +1,6 @@
+# v1.0.3
+
+* FIX: Remove npm shrinkwrap
 
 # v1.0.2
 
